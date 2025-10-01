@@ -2,17 +2,14 @@ import 'package:flutter/material.dart';
 import 'vehicle-data.dart';
 
 class DetailScreen extends StatelessWidget {
-  // Properti ini akan menampung data mobil yang dikirim dari halaman utama
   final Vehicle vehicle;
 
-  // Constructor yang mewajibkan pengiriman data 'vehicle'
   const DetailScreen({super.key, required this.vehicle});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // Judul AppBar diambil dari nama mobil
         title: Text(vehicle.name),
         backgroundColor: Colors.blue,
       ),
@@ -22,7 +19,6 @@ class DetailScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Gambar utama
               ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.network(vehicle.imageUrls[0]),
