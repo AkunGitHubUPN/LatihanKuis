@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'vehicle-data.dart';
 import 'detail.dart';
+import 'login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,8 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      home: const HomePage(),
+      title: 'Katalog Kendaraan',
+      home: const LoginScreen(),
     );
   }
 }
